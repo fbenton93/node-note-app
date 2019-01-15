@@ -1,6 +1,23 @@
+const addNote = (title,body) => {
+  console.log('Adding note', title, body);
+}
+
+const getAll = () => {
+  console.log('Getting all notes');
+}
+
+const getNote = (title) => {
+  console.log(`Getting ${title}`);
+}
+
+const removeNote = (title) => {
+  console.log('Removing Note', title);
+}
 
 
-module.exports.addNote = () => {
-  console.log('addNote');
-  return 'New Note';
+module.exports = {
+  addNote,
+  getAll,
+  getNote,
+  removeNote
 }
